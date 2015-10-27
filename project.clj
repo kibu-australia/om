@@ -1,4 +1,4 @@
-(defproject kibu/om "0.9.1"
+(defproject kibu/om "0.9.1-1"
   :description "ClojureScript interface to Facebook's React"
   :url "http://github.com/swannodette/om"
   :license {:name "Eclipse"
