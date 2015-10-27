@@ -2,6 +2,7 @@
   (:refer-clojure :exclude [map meta time])
   (:require-macros [om.dom :as dom])
   (:require [cljsjs.react]
+            [cljsjs.react.dom]
             [goog.object :as gobject]))
 
 (dom/gen-react-dom-fns)
@@ -45,9 +46,9 @@
 (def option (wrap-form-element js/React.DOM.option "option"))
 
 (defn render
-  "Equivalent to React.render"
+  "Equivalent to ReactDOM.render"
   [component el]
-  (js/React.render component el))
+  (js/ReactDOM.render component el))
 
 (defn render-to-str
   "Equivalent to React.renderToString"

@@ -15,7 +15,8 @@
                   :exclusions [ org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot" :scope "provided"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha" :scope "provided"]
-                 [cljsjs/react "0.13.3-0"]]
+                 [cljsjs/react "0.14.0-1"]
+                 [cljsjs/react-dom "0.14.0-1"]]
 
   :plugins [[lein-cljsbuild "1.0.5"]]
 
@@ -49,7 +50,7 @@
               :source-paths ["src" "examples/state_bug/src"]
               :compiler {
                 :main examples.state-bug.core
-                :asset-path "out"         
+                :asset-path "out"
                 :output-to "examples/state_bug/main.js"
                 :output-dir "examples/state_bug/out"
                 :source-map true
